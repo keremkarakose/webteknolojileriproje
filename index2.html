@@ -1,6 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      .dropbtn {
+        color: grey;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -18,11 +56,11 @@
   </head>
 
   <body>
-    <nav
+  <nav
       class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar"
     >
       <div class="container">
-        <a class="navbar-brand logo" href="#">Kerem Karaköse</a
+        <a class="navbar-brand logo" href="/index2.html">Kerem Karaköse</a
         ><button
           data-toggle="collapse"
           class="navbar-toggler"
@@ -34,22 +72,33 @@
         <div class="collapse navbar-collapse" id="navcol-1">
           <ul class="nav navbar-nav ml-auto">
             <li class="nav-item" role="presentation">
-              <a class="nav-link active" href="/kerem/index2.html">Ana Sayfa</a>
+              <a class="nav-link active" href="/index2.html">Ana Sayfa</a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" href="/kerem/cv.html">Özgeçmiş</a>
+              <a class="nav-link" href="/cv.html">Özgeçmiş</a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" href="/kerem/sehrim.html">Şehrim</a>
+              <a class="nav-link" href="/sehrim.html">Şehrim</a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" href="/kerem/miras.html">Mirasımız</a>
+              <a class="nav-link" href="/miras.html">Mirasımız</a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" href="/kerem/hakkinda.html">Hakkında</a>
+              <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <a href="/kestane.html">Kestane Şekeri</a>
+                  <a href="/bursaspor.html">Bursaspor</a>
+                  <a href="/mudanya.html">Mudanya</a>
+                  <a href="/uludag.html">Uludağ</a>
+                </div>
+              </div>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" href="/kerem/iletisim.html">İletişim</a>
+              <a class="nav-link" href="/hakkinda.html">Hakkında</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="/iletisim.html">İletişim</a>
             </li>
           </ul>
         </div>
@@ -59,7 +108,7 @@
       <section class="clean-block clean-info dark">
         <div class="container">
           <div class="block-heading">
-            <p></p>
+            <p>Hoş Geldiniz G130910063</p>
           </div>
           <div class="row align-items-center">
             <div class="col-md-6">

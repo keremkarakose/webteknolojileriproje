@@ -56,9 +56,10 @@ Live Demo
         </div>
       </div>
     </nav>
-
-          
-    <h2>Enter Username and Password</h2> 
+    <div class="getting-started-info">
+       
+    </div>
+    <h2>Kullanıcı adı ve şifre giriniz</h2> 
       <div class = "container form-signin">
          
          <?php
@@ -74,10 +75,12 @@ Live Demo
                   $_SESSION['username'] = 'g130910063@sakarya.edu.tr';
                   
                   echo 'You have entered valid use name and password';
-                  header("Location: http://www.localhost/kerem/index2.html");
+                $URL="https://g130910063.000webhostapp.com/index2.html";
+                echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";
+                echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
 
                }else {
-                  $msg = 'Wrong username or password';
+                  $msg = 'Yanlış parola';
                }
             }
          ?>
